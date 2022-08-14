@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo留言板</title>
+    <style>
+        .done {
+            text-decoration: line-through;
+            background-image: linear-gradient(to right, #36438d 0%, #35a2a1  51%, #2a3471  100%);
+        }
+
+        .todo-input {background: #F9F0DA;}
+        .todo-input {
+            border: 2px solid #c5464a;
+            border-radius: 5px;
+            background: transparent;
+            top: 0;
+            right: 0;
+            content: 10px;
+        }
+
+
+
+                 
+        .todo-add {
+            background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+            padding: 6px 27px;
+            text-align: center;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            transition: 0.5s;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+        }
+                 
+        .todo-adds {
+            background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+            padding: 5px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+          }
+                   
+         .todo-reverse {
+            background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+            padding: 5px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+          }
+                   
+         .todo-deletes {
+            background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+            padding: 5px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+          }
+                   
+         .todo-done {
+            background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+            margin: 2px;
+            padding: 4px 12px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+          }
+                 
+          .todo-delete {
+            background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%);
+            margin: 2px;
+            padding: 4px 12px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+          }
+     
+
+    </style>
+</head>
+<body>
+    <div>
+        <input class="todo-input" type="text" value="请输入">
+        <button class="todo-add" type="button">Add</button>
+        <button class="todo-adds" type="button">全部完成</button>
+        <button class="todo-reverse" type="button">全部反选</button>
+        <button class="todo-deletes" type="button">全部删除</button>
+    </div>
+    <div id="todo-container">
+        <!-- <div class="todo-cell">
+            <button class="todo-done">完成</button>
+            <button class="todo-delete">删除</button>
+            <span class="todo-span">内容</span>
+        </div> -->
+    </div>
+    <script src="todo.js"></script>
+    
+</body>
+</html>
